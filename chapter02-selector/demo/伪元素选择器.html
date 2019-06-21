@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>伪元素选择器</title>
+    <style>
+        .jys::first-letter {
+            font-size: 30px;
+            line-height: 50px;
+            color: red;
+        }
+        .jys::first-line{
+            color: orange;
+        }
+        .after-test::after {
+            content: '每到春来，';
+            color: purple;
+        }
+        .before-test::before {
+            content: '惆怅';
+            color: blue;
+        }
+        .jys p::selection{
+            color: green;
+            background: pink;
+        }
+        .jys p::-moz-selection {
+            color: green;
+            background: pink;
+        }
+    </style>
+</head>
+<body>
+    <div class="jys">
+        <!--
+            “春”为 red色
+            “眠不觉晓” 为orange色
+            春晓诗句被选中时 color -> green ; background -> pink
+        -->
+        <p class="p-node">春眠不觉晓</p>
+        <p>处处闻啼鸟</p>
+        <p>夜来风雨声</p>
+        <p>花落知多少</p>
+    </div>
+    <p class="after-test">谁道闲情抛弃久，</p>  <!--后面会接“每到春来，” color 为 purple;-->
+    <p class="before-test">还依旧</p>   <!--前面会接“惆怅” color 为 blue;-->
+</body>
+</html>

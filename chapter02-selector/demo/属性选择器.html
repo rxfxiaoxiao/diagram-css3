@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>属性选择器</title>
+    <style>
+        p[id="sy"] {
+            background: orange;
+            color: #fff;
+        }
+        p[class|="con"] {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <p class="pnode1 box1">pnode-01</p>
+    <p id="sy" class="pnode2">pnode-02-花自飘零水自流</p>
+    <p class="con-p">pnode-03</p>
+    <p class="pnode4">pnode-04</p>
+    <p class="pnode5">pnode-05</p>
+</body>
+</html>
