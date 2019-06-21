@@ -127,8 +127,8 @@
 + E F:nth-of-type(n) 查找的是E元素下的第n个F元素
 + 举例:
 
-``
-html:
+```html
+
     <div class="wrap">
         <ul class="wrap-ul">
             <li>list1</li>
@@ -141,22 +141,46 @@ html:
         </ul>
     </div> 
 
-css:
-
- <style>
-     /* 由于.wrap-ul的第四个元素为不是li，而是p元素，所以不起作用 */
-    .wrap-ul li:nth-child(4) { 
-        color: rebeccapurple;
-    }
-    .wrap-ul li:nth-of-type(4) {
-        color: red;
-    }
-</style>    
+    <style>
+        /* 由于.wrap-ul的第四个元素为不是li，而是p元素，所以不起作用 */
+        .wrap-ul li:nth-child(4) { 
+            color: rebeccapurple;
+        }
+        .wrap-ul li:nth-of-type(4) {
+            color: red;
+        }
+    </style>    
 
 ```
 
+#### E:only-child 和 E:only-of-type的区别
 
++ E:only-child 父元素中只有一个子元素，这个子元素是E
++ E:only-of-type 父元素中E类型的子元素只有一个，但是还有可能有其他的子元素。
++ 举例：
 
+```html
+
+<div class="box">
+    <p>一骑红尘妃子笑，无人知是荔枝来</p> <!--color: red-->
+</div>
+
+<div class="box">
+    <h3>一骑红尘妃子笑，无人知是荔枝来</h3> <!--color: blue-->
+    <p>一骑红尘妃子笑，无人知是荔枝来</p> 
+    <p>一骑红尘妃子笑，无人知是荔枝来</p> 
+</div>
+
+<style>
+    .box p:only-child {
+        color: red;
+    }
+    .box h3:only-of-type {
+        color: blue
+    }
+</style>
+
+```
 
 
 

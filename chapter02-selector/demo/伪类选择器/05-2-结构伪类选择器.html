@@ -6,11 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>结构伪类选择器-E F:nth-child(n)和E F:nth-of-type(n) 的区别</title>
     <style>
+        /* 由于.wrap-ul的第四个元素为不是li，而是p元素，所以不起作用 */
         .wrap-ul li:nth-child(4) {
             color: rebeccapurple;
         }
         .wrap-ul li:nth-of-type(4) {
             color: red;
+        }
+        .box h3:only-child {
+          color: green;
+        }
+        .box p:only-of-type {
+            color: yellow;
         }
     </style>
 </head>
@@ -20,11 +27,25 @@
            <li>list1</li>
            <li>list2</li>
            <li>list3</li>
-           <p>我是来破坏队形的，啊哈哈哈</p>
+           <p>我是来破坏队形的，啊哈哈哈</p> 
            <li>list4</li> <!--颜色为red-->
            <li>list5</li>
            <li>list6</li>
        </ul>
    </div> 
+
+   <div class="only-box">
+      <div class="box">
+          <h3>天知地知你知我知</h3>
+          <h3>天知地知你知我知</h3>
+          <p>一骑红尘妃子笑，无人知是荔枝来</p> 
+      </div>
+      <div class="box">
+            <p>人生得意须尽欢，莫使金樽空对月</p>
+      </div>
+      <div class="box">
+            <h3>人生得意须尽欢，莫使金樽空对月</h3>
+      </div>
+   </div>
 </body>
 </html>
