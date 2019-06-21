@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>UI元素伪类选择器</title>
+    <style>
+        input:enabled {
+            border: 1px solid red;
+        }
+        input:disabled {
+            border: 1px solid blue;
+        }
+        input:checked+.testClass {
+            color: orange
+        }
+
+    </style>
+</head>
+<body>
+    <!--边框为绿色-->
+    <input type="text" disabled>
+
+    <!--边框为红色-->
+    <input type="text"> 
+
+    <!--边框为绿色-->
+    <input type="text" disabled>
+
+    <!--边框为红色-->
+    <input type="text">
+
+    <input type="radio" checked>
+
+    <!--文字为橘黄色-->
+    <div class="testClass">hhaha </div>
+
+    <input type="checkbox">
+
+    <div class="testClass">hhaha </div>
+    
+</body>
+</html>

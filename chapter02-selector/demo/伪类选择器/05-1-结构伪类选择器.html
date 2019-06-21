@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>结构伪类选择器</title>
+    <style>
+        .body {
+            color: #666;
+        }
+        .div-box {
+            height: 40px;
+        }
+        li:first-child {
+            color: orange;
+        }
+        li:last-child {
+            color: red;
+        }
+        .wrap1:root {
+            background: #eee;
+        }
+        .wrap1 li:nth-child(2){
+            color:blueviolet
+        }
+        .wrap2 .div-box:nth-last-child(2) {
+            color:chartreuse
+        }
+        .wrap2 .div-box:nth-last-of-type(1) {
+            color:fuchsia
+        }
+        .p-node:first-of-type {
+            color:green;
+        }
+       .p-node:last-of-type {
+           color:cadetblue
+       }
+       h1:only-child {
+           background:burlywood
+       }
+       h1:only-of-type {
+           background: yellow;
+       }
+       .div-box:empty {
+           background: #ff3855
+       }
+    </style>
+</head>
+<body>
+    <div class="wrap"><h1>窗前明月光，疑似地上霜</h1></div>
+    <div class="wrap1">
+        <ul>
+            <li>list1<span>西风吹谢花成泥，凤蝶每向香尘泣</span></li>
+            <li>list2</li>
+            <li>list3</li>
+            <li>list4</li>
+            <li>list5</li>
+            <li>list6</li>
+        </ul>
+        <p class="p-node">最好不想见，如此便可不想念。最好不相知，如此便可不相思。</p>
+        <p class="p-node">最好不想见，如此便可不想念。最好不相知，如此便可不相思。</p>
+        <h1></h1>
+        <div class="div-box"></div>
+        <div class="div-box">
+            <span>但曾相见便相知，相见何如不见时。安得与君相决绝，免教生死做相思。</span>
+            <span>笑那浮华落尽，月色如洗；笑那悄然而逝，飞花万盏</span>
+        </div>
+    </div>
+    <div class="wrap2">
+            <ul>
+                <li>list1<span>西风吹谢花成泥，凤蝶每向香尘泣</span></li>
+                <li>list2</li>
+                <li>list3</li>
+                <li>list4</li>
+                <li>list5</li>
+                <li>list6</li>
+            </ul>
+            <p class="p-node">最好不想见，如此便可不想念。最好不相知，如此便可不相思。</p>
+            <p class="p-node">最好不想见，如此便可不想念。最好不相知，如此便可不相思。</p>
+            <h1></h1>
+            <div class="div-box"><span>昆山玉碎凤凰叫，芙蓉泣露香兰笑</span></div>
+            <div class="div-box">
+                <span>但曾相见便相知，相见何如不见时。安得与君相决绝，免教生死做相思。</span>
+                <span>笑那浮华落尽，月色如洗；笑那悄然而逝，飞花万盏</span>
+            </div>
+        </div>
+</body>
+</html>

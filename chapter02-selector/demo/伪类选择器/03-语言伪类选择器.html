@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>语言伪类选择器</title>
+    <style>
+    :lang(en) p{
+        color :blue;
+    }
+    :lang(zh-cn) p {
+        color: red;
+    }
+    </style>
+</head>
+<body>
+    <!-- 
+        当html 中lang为zh-cn时，p元素中的文字为红色
+        当html中lang为en时，p元素中的文字为蓝色 
+    -->
+    
+    <p>花自飘零水自流，一种相思，两处闲愁</p>
+</body>
+</html>

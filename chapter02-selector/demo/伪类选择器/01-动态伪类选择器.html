@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>动态伪类选择器</title>
+    <style>
+     .btn {
+        width: 280px;
+        height: 50px;
+        line-height: 50px;
+        border: 1px solid #333;
+        color: #333;
+        text-align: center;
+     }
+     .btn:hover {
+         background:#333;
+         color: #fff;
+     }
+     .btn:active {
+        background:#666;
+        color: #eee;
+     }
+
+     .a-link:link {
+         color: green;
+     }
+     .a-link:visited {
+         color: red;
+     }
+     .a-link:hover {
+         color: orange;
+     }
+     .a-link:active {
+         color: #000;
+     }
+    </style>
+
+</head>
+<body>
+    
+    <!-- 
+        常态：color: #333;background:#fff;
+        鼠标悬浮：background:#333;color: #fff;
+        点击： background:#666;color: #eee; 
+    -->
+    <p class="btn">立即购买</p>
+
+    <!-- 
+        点击前：绿色
+        鼠标悬浮：橘黄色
+        鼠标按下去：黑色
+        访问之后： 红色 
+    -->
+    <a href="//www.baidu.com" class="a-link">百度一下，你就知道</a>
+</body>
+</html>

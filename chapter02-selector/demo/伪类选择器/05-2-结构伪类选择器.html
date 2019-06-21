@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>结构伪类选择器-E F:nth-child(n)和E F:nth-of-type(n) 的区别</title>
+    <style>
+        .wrap-ul li:nth-child(4) {
+            color: rebeccapurple;
+        }
+        .wrap-ul li:nth-of-type(4) {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+   <div class="wrap">
+       <ul class="wrap-ul">
+           <li>list1</li>
+           <li>list2</li>
+           <li>list3</li>
+           <p>我是来破坏队形的，啊哈哈哈</p>
+           <li>list4</li> <!--颜色为red-->
+           <li>list5</li>
+           <li>list6</li>
+       </ul>
+   </div> 
+</body>
+</html>
