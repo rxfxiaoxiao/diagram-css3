@@ -13,13 +13,28 @@
         p[class|="con"] {
             color: red;
         }
+        p[class~="pnode"] {
+            color: green;
+        }
+        p[class*="pnode"] {
+            background: pink;
+        }
+        div[class^="div"] {
+            color: yellow;
+        }
+        div[class$="txt"] {
+            font-size: 28px;
+        }
     </style>
 </head>
 <body>
     <p class="pnode1 box1">pnode-01</p>
     <p id="sy" class="pnode2">pnode-02-花自飘零水自流</p>
     <p class="con-p">pnode-03</p>
-    <p class="pnode4">pnode-04</p>
+
+    <p class="pnode4 pnode">pnode-04</p>
     <p class="pnode5">pnode-05</p>
+    <div class="div-box1 div-txt">寻寻觅觅，冷冷清清，凄凄惨惨戚戚</div>
+    <div class="div-box2">寻寻觅觅，冷冷清清，凄凄惨惨戚戚</div>
 </body>
 </html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>border-color实现立体渐变边框的效果</title>
+    <style> 
+        div {
+            width: 200px;
+            height: 100px;
+
+            border: 10px solid transparent;
+
+            border-radius: 15px 0 ;
+            background: #eee;
+
+        
+            /* -webkit-border-top-colors: #a0a #909 #808 #707 #606 #505 #404 #303; */
+            /* -ms-border-top-colors: #a0a #909 #808 #707 #606 #505 #404 #303; */
+            -moz-border-top-colors: #a0a #909 #808 #707 #606 #505 #404 #303;
+            /* -o-border-top-colors: #a0a #909 #808 #707 #606 #505 #404 #303; */
+            /* border-top-colors: #a0a #909 #808 #707 #606 #505 #404 #303; */
+
+            /* -webkit-border-right-colors: #a0a #909 #808 #707 #606 #505 #404 #303; */
+            /* -ms-border-right-colors: #a0a #909 #808 #707 #606 #505 #404 #303; */
+            -moz-border-right-colors: #a0a #909 #808 #707 #606 #505 #404 #303;
+            /* -o-border-right-colors: #a0a #909 #808 #707 #606 #505 #404 #303; */
+            /* border-right-colors: #a0a #909 #808 #707 #606 #505 #404 #303; */
+
+            /* -webkit-border-bottom-colors: #a0a #909 #808 #707 #606 #505 #404 #303; */
+            /* -ms-border-bottom-colors: #a0a #909 #808 #707 #606 #505 #404 #303; */
+            -moz-border-bottom-colors: #a0a #909 #808 #707 #606 #505 #404 #303;
+            /* -o-border-bottom-colors: #a0a #909 #808 #707 #606 #505 #404 #303; */
+            /* border-bottom-colors: #a0a #909 #808 #707 #606 #505 #404 #303; */
+
+            /* -webkit-border-left-colors: #a0a #909 #808 #707 #606 #505 #404 #303; */
+            /* -ms-border-left-colors: #a0a #909 #808 #707 #606 #505 #404 #303; */
+            -moz-border-left-colors: #a0a #909 #808 #707 #606 #505 #404 #303;
+            /* -o-border-left-colors: #a0a #909 #808 #707 #606 #505 #404 #303; */
+            /* border-left-colors: #a0a #909 #808 #707 #606 #505 #404 #303; */
+        }
+        
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
