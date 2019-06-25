@@ -1,0 +1,17 @@
+// =============== border 相关 ===============//
+
+// 1、border-image 浏览器支持程度不好
+@mixin auto-prefix_border-image($val) {
+    -webkit-border-image: $val;
+    -moz-border-image: $val;
+    -o-border-image: $val;
+    border-image: $val ;
+}
+
+// 2、border-radius 部分老版本的浏览器还是需要添加前缀
+@mixin audio-prefix_border-radius($val) {
+    -webkit-border-radius: $val;
+    -moz-border-radius: $val;
+    border-radius: $val;
+}
+

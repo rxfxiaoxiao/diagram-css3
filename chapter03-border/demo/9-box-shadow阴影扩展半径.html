@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>阴影扩展半径</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+            box-shadow: 0 0 0 10px red;
+        }
+
+        
+        .box2 {
+            width: 200px;
+            height: 100px;
+            margin: 50px;
+            box-shadow: 0 0 0 5px red, 0 0 0 10px yellow, 0 0 0 15px green;
+        }
+        .box3 {
+            width: 200px;
+            height: 100px;
+            margin: 50px;
+            border: 1px solid #000;
+            box-shadow: 5px 0 5px -4px red;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box2">彩色边框</div>
+
+    <div class="box3">测试扩展半径作用</div>
+</body>
+</html>

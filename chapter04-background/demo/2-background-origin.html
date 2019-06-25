@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>background-origin应用</title>
+    <style>
+        div {
+            margin: 50px;
+        }
+        .box1 {
+            width: 200px;
+            height: 100px;
+            border: 10px dotted  #333;
+            padding: 30px;
+            background: pink url('./images/2.jpeg') no-repeat left top;
+          
+            background-origin: border-box;
+        }
+        .box2 {
+            width: 200px;
+            height: 100px;
+            border: 20px dotted  #333;
+            padding: 30px;
+            background: pink url('./images/2.jpeg') no-repeat left top;
+            background-origin: padding-box;
+        }
+        .box3 {
+            width: 200px;
+            height: 100px;
+            border: 20px dotted  #333;
+            padding: 30px;
+            background: pink url('./images/2.jpeg') no-repeat left top;
+            /* background-attachment: fixed; */
+            background-origin: content-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+</body>
+</html>

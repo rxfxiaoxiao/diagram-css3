@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>border-style</title>
+    <style>
+    .wrap {
+        width: 100%;
+        height: auto;
+        border: 2px solid green;
+    }
+    p {
+        width: 200px;
+        height: 40px;
+        margin: 20px;
+        background: yellow;
+        
+
+    }
+    p:nth-child(1) {
+        border: none;
+    }
+    p:nth-child(2) {
+        border: hidden;
+    }
+    p:nth-child(3) {
+        border: 1px dotted red;
+    }
+    p:nth-child(4) {
+        border: 1px dashed red;
+    }
+    p:nth-child(5) {
+        border: 1px solid red;
+    }
+    p:nth-child(6) {
+        border: 3px double red;
+    }
+    p:nth-child(7) {
+        border: 5px groove red;
+    }
+    p:nth-child(8) {
+        border: 5px ridge red;
+    }
+    p:nth-child(9) {
+        border: 5px inset red;
+    }
+    p:nth-child(10) {
+        border: 5px outset red;
+    }
+    p:nth-child(11) {
+        border: inherit ;
+    }
+
+    .tb-box {
+        margin-top: 30px;
+         border: hidden
+    }
+    tr {
+       border: 1px solid #333;
+    }
+    td {
+        border:1px solid #333;
+    }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <p>box1</p>
+        <p>box2</p>
+        <p>box3</p>
+        <p>box4</p>
+        <p>box5</p>
+        <p>box6</p>
+        <p>box7</p>
+        <p>box8</p>
+        <p>box9</p>
+        <p>box10</p>
+        <p>box11</p>
+    </div>
+    
+    <table class="tb-box">
+        <tr>
+            <td>表格1</td>
+            <td>表格2</td>
+            <td>表格3</td>
+        </tr>
+        <tr>
+            <td>单元格1</td>
+            <td>单元格2</td>
+            <td>单元格3</td>
+        </tr>
+    </table>
+</body>
+</html>

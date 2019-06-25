@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>border-image demo</title>
+    <style>
+        .wrap1 {
+            width: 300px;
+            height: 600px;
+            border: 14px solid pink;
+            border-width: 7px 12px 7px 14px;
+            /* border-image: url('./images/border1.png')70 115 60 135 70 115 60 135 stretch; */
+            border-image: url('./images/border1.png')7 12 7 14 stretch;
+        }
+        .wrap2,.wrap3,.wrap4 {
+            width: 200px;
+            height: 100px;
+            border: 27px solid transparent;
+            margin:30px;
+        }
+        .wrap2 {
+            border-image: url('./images/border2.png')27 stretch;
+        }
+        .wrap3 {
+            border-image: url('./images/border2.png')27 round;
+        }
+        .wrap4 {
+            border-image: url('./images/border2.png')27 repeat;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap1">
+        花飞花谢花满天，<br>
+        红消香断有谁怜？
+    </div>
+
+    <div class="wrap2"></div>
+    <div class="wrap3"></div>
+    <div class="wrap4"></div>
+</body>
+</html>
