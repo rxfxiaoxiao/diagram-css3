@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>background-repeat</title>
+    <style>
+        div:nth-child(1) {
+            width: 200px;
+            height: 200px;
+            border: 30px dotted #333;
+            padding: 40px;
+            background: yellow url('./images/3.jpeg') no-repeat left top;
+        }
+        div:nth-child(2) {
+            width: 200px;
+            height: 200px;
+            border: 30px dotted #333;
+            padding: 40px;
+            margin: 50px;
+            background: yellow url('./images/3.jpeg') repeat-x left top;
+        }
+
+    </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+</body>
+</html>

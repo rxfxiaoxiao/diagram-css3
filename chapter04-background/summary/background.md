@@ -6,6 +6,9 @@
 + background-attachment 背景图片是固定还是滚动 取值：scroll || fixed
 + background-position   背景图片位置
 
+注意事项：
+
+
 ## css3 新增加的属性
 
 ###  1、background-origin: 指定绘制背景图片的起点位置
