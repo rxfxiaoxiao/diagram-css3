@@ -28,12 +28,34 @@
 + padding-box: 背景图片只能在padding的外边缘以内绘制
 + content-box: 背景图片只能在内容区域内绘制
 
+
 注意事项：
 + ``低版本Gecko``（firefox 3.6及之前版本）``不支持content-box``，并且``用border、padding 来代替``标准语法中的``border-box、padding-box``
++ background-clip还有一个``text``属性，只用在webkit内核下才能起作用，需要配合``webkit的私有属性text-fill-color``使用，可以制作``背景图片填充文本``的效果。
+
+用法如下：
+
+```css
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+```
+
 
 
 
 ### 3、background-size: 指定背景图片的大小
 
-### 4、background-break: 指定内联元素的背景图片进行平铺时的循环方式
+取值：
++ auto 保持图片原始大小
++ 具体像素值，将改变背景图片的大小
++ 百分比 将改变图片的大小
++ cover
++ contain 
 
+### 4、多背景
+
+注意点：
+
++ 颜色不可以取多个值
++ 多个背景取值用逗号分隔开

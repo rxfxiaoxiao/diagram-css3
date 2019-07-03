@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>初试线性渐变-方位名词</title>
+    <style>
+        div {
+            width: 300px;
+            height: 40px;
+            margin: 20px auto;
+            line-height: 40px;
+            color: #fff;
+            text-align: center;
+        }
+        div:nth-child(1) {
+            background-image: linear-gradient(to top, red, orange,blue, green);
+
+        }
+        div:nth-child(2) {
+            background-image: linear-gradient(to right, red, orange,blue, green);
+        }
+        div:nth-child(3) {
+            background-image: linear-gradient(to bottom, red, orange,blue, green);
+        }
+        div:nth-child(4) {
+            background-image: linear-gradient(to left, red, orange,blue, green);
+        }
+        div:nth-child(5) {
+            background-image: linear-gradient(to top left, red, orange,blue, green);
+        }
+        div:nth-child(6) {
+            background-image: linear-gradient(to right top, red, orange,blue, green);
+        }
+        div:nth-child(7) {
+            background-image: linear-gradient(to right bottom, red, orange,blue, green);
+        }
+        div:nth-child(8) {
+            background-image: linear-gradient(to left bottom, red, orange,blue, green);
+        }
+    </style>
+</head>
+<body>
+    <div>从下往上</div>
+    <div>从左往右</div>
+    <div>从上往下</div>
+    <div>从右往左</div>
+    <div>左上到右下</div>
+    <div>右上到左下</div>
+    <div>右下到左上</div>
+    <div>左下到右上</div>
+</body>
+</html>

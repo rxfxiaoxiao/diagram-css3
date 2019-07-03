@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>word-break demo</title>
+    <style>
+        div {
+            width: 150px;
+            height: 200px;
+            word-wrap: break-word;
+            border:1px solid #ccc;
+            margin: 50px auto;
+        }
+        .box1 {
+            overflow-wrap: normal;
+        }
+        .box2 {
+            overflow: break-word;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">不积跬步无以至千里，不积小流无以成江海 abcdefghijklmnopqrstuvwxyz</div>
+    <div class="box2">不积跬步无以至千里，不积小流无以成江海 abcdefghijklmnopqrstuvwxyz</div>
+</body>
+</html>

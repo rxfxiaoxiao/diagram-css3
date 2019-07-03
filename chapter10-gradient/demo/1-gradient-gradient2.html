@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>graident渐变-角度使用</title>
+    <style>
+        div {
+            width: 300px;
+            height: 40px;
+            margin: 20px auto;
+            color: #fff;
+            text-align: center;
+            line-height: 40px;
+        }
+        div:nth-child(1) {
+            background-image: linear-gradient(0deg, red, orange,blue, green);
+        }
+        div:nth-child(2) {
+            background-image: linear-gradient(90deg, red, orange,blue, green);
+        }
+        div:nth-child(3) {
+            background-image: linear-gradient(180deg, red, orange,blue, green);
+        }
+        div:nth-child(4) {
+            background-image: linear-gradient(270deg, red, orange,blue, green);
+        }
+        div:nth-child(5) {
+            background-image: linear-gradient(360deg, red, orange,blue, green);
+        }
+
+        div:nth-child(6) {
+            background-image: linear-gradient(45deg, red, orange,blue, green);
+        }
+        div:nth-child(7) {
+            background-image: linear-gradient(135deg, red, orange,blue, green);
+        }
+        div:nth-child(8) {
+            background-image: linear-gradient(225deg, red, orange,blue, green);
+        }
+        div:nth-child(9) {
+            background-image: linear-gradient(315deg, red, orange,blue, green);
+        }
+    </style>
+</head>
+<body>
+    <div>0deg</div>
+    <div>90deg</div>
+    <div>180deg</div>
+    <div>270deg</div>
+    <div>360deg</div>
+    <div>45deg</div>
+    <div>135deg</div>
+    <div>225deg</div>
+    <div>315deg</div>
+</body>
+</html>

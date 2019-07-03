@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>css变量与脚本结合起来</title>
+  <style>
+    :root {
+      --color: red;
+      
+    }
+    .box {
+      width: 200px;
+      height: 200px;
+      margin-top: 40px;
+      color: var(--color);
+      border: 1px solid currentColor;
+    }
+  </style>
+</head>
+<body>
+  <select name="clor" id="selColor">
+    <option value="red">red</option>
+    <option value="green">green</option>
+    <option value="blue">blue</option>
+    <option value="yellow">yellow</option>
+  </select>
+  <div class="box">花自飘零水自流，一种相思，两处闲愁</div>
+  <script>
+  
+    var rootEl = document.documentElement;
+    var selDom = document.getElementById('selColor');
+    rootEl.style.setProperty('--color', 'pink');
+    console.info(rootEl.style.getPropertyValue('--color').trim());
+    rootEl.style.removeProperty('--color');
+    console.info(rootEl.style.getPropertyValue('--color').trim());
+    // selDom.addEventListener('change', function(evt) {
+    //   rootEl.style.setProperty('--color', this.value);
+    // })
+
+  </script>
+</body>
+</html>

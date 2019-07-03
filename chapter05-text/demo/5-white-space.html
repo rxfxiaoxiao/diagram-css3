@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>理解white-space</title>
+    <style>
+        div {
+            width: 200px;
+            border: 1px solid red;
+            margin: 20px;
+            
+        }
+
+        .box1 {
+            white-space: normal;
+        }
+        .box2 {
+            white-space: nowrap;
+        }
+        .box3 {
+            white-space: pre;
+        }
+        .box4 {
+            white-space: pre-wrap;
+        }
+        .box5 {
+            white-space: pre-line;
+        }
+        .box6 {
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    死去元知万事空，&nbsp;&nbsp;&nbsp;&nbsp;但悲不见九州同。
+    王师北定中原日，    家祭无忘告乃翁。<br> 
+    In the end, it’s not&nbsp;&nbsp;the years in your life that count. It’s the life in your years.ohhhhhhhhhhhhhhhhhhhhhh~
+</div>   
+<div class="box1">
+    死去元知万事空，&nbsp;&nbsp;&nbsp;&nbsp;但悲不见九州同。
+    王师北定中原日，    家祭无忘告乃翁。<br> 
+    In the end, it’s not&nbsp;&nbsp;the years in your life that count. It’s the life in your years.ohhhhhhhhhhhhhhhhhhhhhh~
+</div>
+<div class="box2">
+    死去元知万事空，&nbsp;&nbsp;&nbsp;&nbsp;但悲不见九州同。
+    王师北定中原日，    家祭无忘告乃翁。<br> 
+    In the end, it’s not&nbsp;&nbsp;the years in your life that count. It’s the life in your years.ohhhhhhhhhhhhhhhhhhhhhh~
+</div>
+<div class="box3">
+    死去元知万事空，&nbsp;&nbsp;&nbsp;&nbsp;但悲不见九州同。
+    王师北定中原日，    家祭无忘告乃翁。<br> 
+    In the end, it’s not&nbsp;&nbsp;the years in your life that count. It’s the life in your years.ohhhhhhhhhhhhhhhhhhhhhh~
+</div>
+<div class="box4">
+    死去元知万事空，&nbsp;&nbsp;&nbsp;&nbsp;但悲不见九州同。
+    王师北定中原日，    家祭无忘告乃翁。<br> 
+    In the end, it’s not&nbsp;&nbsp;the years in your life that count. It’s the life in your years.ohhhhhhhhhhhhhhhhhhhhhh~
+</div>
+<div class="box5">
+    死去元知万事空，&nbsp;&nbsp;&nbsp;&nbsp;但悲不见九州同。
+    王师北定中原日，    家祭无忘告乃翁。<br> 
+    In the end, it’s not&nbsp;&nbsp;the years in your life that count. It’s the life in your years.ohhhhhhhhhhhhhhhhhhhhhh~
+</div>
+
+
+<!-- <div class="box6">
+                <<静夜思>>
+        窗前明月光，   疑似地上霜；
+        举头望明月，   低头思故乡。
+</div> -->
+</body>
+</html>
+
+
+
+<!-- <div id="box">
+    Hi&nbsp;&nbsp;,
+    This   is a incomprehensibilities long word.
+    </br>
+    你好&nbsp;&nbsp;，
+    这   是一个不可思议的长单词
+</div> -->

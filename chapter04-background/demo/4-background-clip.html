@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>background-clip简单应用</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;\margin: 20px auto;
+            border: 10px dotted #000;
+            padding: 20px;
+            background: url('./images/3.jpeg') no-repeat center center/ cover;
+        }
+        div:nth-child(1) {
+            background-origin: border-box;
+            background-clip: border-box;
+        }
+        div:nth-child(2) {
+            background-origin: padding-box;
+            background-clip: padding-box;
+        }
+        div:nth-child(3) {
+            background-origin:content-box;
+            background-clip: content-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">君不见黄河之水天上来，奔流到海不复还</div>
+    <div class="box">君不见高堂明镜悲白发，朝如青丝暮成雪</div>
+    <div class="box">人生得意须尽欢，莫使金樽空对月</div>
+</body>
+</html>
