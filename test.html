@@ -4,41 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>css变量与脚本结合起来</title>
+  <title>理解纹理</title>
   <style>
-    :root {
-      --color: red;
-      
-    }
-    .box {
-      width: 200px;
-      height: 200px;
-      margin-top: 40px;
-      color: var(--color);
-      border: 1px solid currentColor;
+  body {
+    background:
+          radial-gradient(circle closest-side at 60% 43%, #b03 26%, rgba(187,0,51,0) 27%),
+          radial-gradient(circle closest-side at 40% 43%, #b03 26%, rgba(187,0,51,0) 27%),
+          radial-gradient(circle closest-side at 40% 22%, #d35 45%, rgba(221,51,85,0) 46%),
+          radial-gradient(circle closest-side at 60% 22%, #d35 45%, rgba(221,51,85,0) 46%),
+          radial-gradient(circle closest-side at 50% 35%, #d35 30%, rgba(221,51,85,0) 31%),
+
+          radial-gradient(circle closest-side at 60% 43%, #b03 26%, rgba(187,0,51,0) 27%) 50px 50px,
+          radial-gradient(circle closest-side at 40% 43%, #b03 26%, rgba(187,0,51,0) 27%) 50px 50px,
+          radial-gradient(circle closest-side at 40% 22%, #d35 45%, rgba(221,51,85,0) 46%) 50px 50px,
+          radial-gradient(circle closest-side at 60% 22%, #d35 45%, rgba(221,51,85,0) 46%) 50px 50px,
+          radial-gradient(circle closest-side at 50% 35%, #d35 30%, rgba(221,51,85,0) 31%) 50px 50px;
+          background-color:#b03;
+          background-size:100px 100px;
     }
   </style>
 </head>
 <body>
-  <select name="clor" id="selColor">
-    <option value="red">red</option>
-    <option value="green">green</option>
-    <option value="blue">blue</option>
-    <option value="yellow">yellow</option>
-  </select>
-  <div class="box">花自飘零水自流，一种相思，两处闲愁</div>
-  <script>
   
-    var rootEl = document.documentElement;
-    var selDom = document.getElementById('selColor');
-    rootEl.style.setProperty('--color', 'pink');
-    console.info(rootEl.style.getPropertyValue('--color').trim());
-    rootEl.style.removeProperty('--color');
-    console.info(rootEl.style.getPropertyValue('--color').trim());
-    // selDom.addEventListener('change', function(evt) {
-    //   rootEl.style.setProperty('--color', this.value);
-    // })
-
-  </script>
 </body>
 </html>

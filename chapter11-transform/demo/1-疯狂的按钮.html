@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>制作旋转icon</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #socialicons,
+        #socialicons2 {
+            width: 200px;
+            height: 200px;
+            box-sizing: border-box;
+            padding: 60px 0;
+            background: #ccc;
+            margin:0 auto;
+        }
+        #socialicons img,
+        #socialicons2 img{
+            width: 80px;
+            height: 80px;
+            margin: 0 auto;
+            
+            display: block;
+
+        }
+        #socialicons img,
+        #socialicons2 img {
+            transition: all .8s ease-in-out;
+        }
+        #socialicons img:hover {
+            transform: rotate(360deg) scale(1.5);
+        }
+        #socialicons2 img:hover {
+            transform: rotate(-360deg) scale(0.8);
+        }
+    </style>
+</head>
+<body>
+    <h1>顺时针旋转360度放大1.2倍</h1>
+    <div id="socialicons"><img src="https://abs.twimg.com/favicons/win8-tile-144.png" alt=""></div>
+
+    <h1>逆时针旋转360度，缩小0.7倍</h1>
+    <div id="socialicons2"><img src="https://abs.twimg.com/favicons/win8-tile-144.png" alt=""></div>
+</body>
+</html>

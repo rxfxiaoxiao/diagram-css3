@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 150px;
+            height: 100px;
+            position: relative;
+        }
+        .box div {
+            width: 182px;
+            height: 277px;
+            transform-origin: center center;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .box div img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        div:nth-child(1) {
+            z-index: 1;
+            transform: skew(10deg);
+        }
+        div:nth-child(2) {
+            z-index: 2;
+            transform: skew(15deg);
+        }
+        div:nth-child(3) {
+            z-index: 3;
+            transform: skew(20deg);
+        }
+        div:nth-child(4) {
+            z-index: 4;
+            transform: skew(25deg);
+        }
+        div:nth-child(5) {
+            z-index: 5;
+            transform: skew(30deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div><img src="./images/pkp.png"></div>
+        <div><img src="./images/pkp.png"></div>
+        <div><img src="./images/pkp.png"></div>
+        <div><img src="./images/pkp.png"></div>
+        <div><img src="./images/pkp.png"></div>
+    </div>
+   
+</body>
+</html>

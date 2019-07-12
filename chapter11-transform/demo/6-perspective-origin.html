@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>perspective-origin</title>
+    <style>
+        .cube {
+            font-size: 50px;
+            width: 150px;
+            height: 150px;
+            margin: 8px auto;
+            transform-style: preserve-3d;
+            perspective: 450px;
+            position: relative;
+            transform: rotateX(135deg) rotateY(30deg);
+        }
+        /* .w1 .cube {
+            perspective-origin: top left;
+        } */
+        .side {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            background: rgba(255, 99, 71, .6);
+            border: 1px solid rgba(0,0,0,.5);
+            color: white;
+            text-align: center;
+            line-height: 150px;
+        }
+        .front {
+            transform: tranlateZ(75px);
+        }
+        .top {
+            transform: rotateX(90deg) translateZ(75px);
+        }
+        .right {
+            transform: rotateY(90deg) translateZ(75px);
+        }
+        .left {
+            transform: rotateY(-90deg) translateZ(75px);
+        }
+        .bottom {
+            transform: rotateX(-90deg) translateZ(75px);
+        }
+        .back {
+            transform: rotateY(-180deg) translateZ(75px) ;
+        }
+
+      
+    </style>
+</head>
+<body>
+    <div class="cube w1">
+        <div class="side front">1</div>
+        <div class="side back">6</div>
+        <div class="side right">4</div>
+        <div class="side left">3</div>
+        <div class="side top">5</div>
+        <div class="side bottom ">2</div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>rotate旋转图片</title>
+    <style> 
+        .wrap{
+            width: 180px;
+            height: 280px;
+            position: relative;
+            margin: 50px auto;
+        }
+        .wrap div {
+            width: 180px;
+            height: 280px;
+            background: url('./images/pkp2.png') no-repeat center/ cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            /* transform-origin: bottom center; */
+        }
+        .wrap div:nth-child(1) {
+            opacity: .5;
+            z-index: 1;
+            transform: rotate(10deg);
+        }
+        div:nth-child(2) {
+            opacity: .6;
+            z-index: 2;
+            transform: rotate(15deg);
+        }
+        .wrap div:nth-child(3) {
+            opacity: .7;
+            z-index: 3;
+            transform: rotate(20deg);
+        }
+        .wrap div:nth-child(4) {
+            opacity: .8;
+            z-index: 4;
+            transform: rotate(25deg);
+        }
+        .wrap div:nth-child(5) {
+            opacity: .9;
+            z-index: 5;
+            transform: rotate(30deg);
+        }
+        .wrap div:nth-child(6) {
+            opacity: 1;
+            z-index: 6;
+            transform: rotate(35deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>  
+    </div>
+     
+</body>
+</html>
