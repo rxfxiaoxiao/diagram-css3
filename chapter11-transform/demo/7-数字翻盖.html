@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>数字翻盖</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .wrap {
+            width: 100px;
+            height: 150px;
+            perspective: 400px;
+            margin: 200px auto;
+        }
+        .box {
+            width: 100px;
+            height: 150px;
+            background: #ccc;
+            text-align: center;
+            transform: rotateY(180deg);
+            transform-style: preserve-3d;
+            backface-visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="box">我是一张小卡片</div>
+    </div>
+</body>
+</html>
