@@ -18,7 +18,7 @@
         }
         .box {
             width: 200px;
-            height: 200px;
+            height: 300px;
             margin: 200px auto;
             position: relative;
             /* transform: rotateY(45deg) rotateX(35deg); */
@@ -27,7 +27,7 @@
         }
         .box div {
             width: 100px;
-            height: 100px;
+            height: 150px;
             position: absolute;
             top: 50px;
             left: 50px;
@@ -39,26 +39,19 @@
             transform: translateZ(50px);
             background: red;
         }
+        .right {
+            transform: rotateY(90deg) translateZ(50px);
+            background: green;
+        }
         .back {
             transform: rotateY(180deg) translateZ(50px);
             background: purple;
         }
         .left {
-            transform: rotateY(90deg) translateZ(-50px);
+            transform: rotateY(270deg) translateZ(50px);
             background: orange;
         }
-        .right {
-            transform: rotateY(90deg) translateZ(50px);
-            background: green;
-        }
-        .top {
-            transform: rotateX(-90deg) translateZ(50px);
-            background: black
-        }
-        .bottom {
-            transform: rotateX(90deg) translateZ(50px);
-            background: blue
-        }
+        
         @keyframes roateAni {
             0% { transform: rotateY(0deg); }
             15% { transform: rotateY(90deg); }
@@ -79,8 +72,6 @@
             <div class="back">2</div>
             <div class="left">3</div>
             <div class="right">4</div>
-            <div class="top">5</div>
-            <div class="bottom">6</div>
         </div>
     </div>
 </body>
