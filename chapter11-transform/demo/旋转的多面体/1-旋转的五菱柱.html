@@ -25,7 +25,7 @@
             margin: 200px auto;
             position: relative;
             transform-style: preserve-3d;
-            animation: roateAni 16s ease-in-out infinite;
+            /* animation: roateAni 16s ease-in-out infinite; */
         }
         .box div {
             width: 100px;
@@ -42,7 +42,8 @@
             background-color: red;
         }
         .box div:nth-child(2) {
-            transform: rotateY(72deg) translateZ(var(--offset));
+            transform: rotateY(72deg);
+            /* transform: rotateY(72deg) translateZ(var(--offset)); */
             background-color: orange;
         }
         .box div:nth-child(3) {
@@ -58,7 +59,7 @@
             background-color: blue;
         }
         .box div:nth-child(n+3) {
-            /* display: none; */
+            display: none;
         }
         @keyframes roateAni {
             0% { transform: rotateY(0deg); }

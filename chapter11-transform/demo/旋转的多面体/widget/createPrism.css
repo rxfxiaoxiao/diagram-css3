@@ -1,0 +1,9 @@
+.cube {
+    position: relative;
+    margin: 0 auto;
+}
+.cube>div {
+    position: absolute;
+    top: 0;
+    left: 0;
+}

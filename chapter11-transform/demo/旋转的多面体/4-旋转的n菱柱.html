@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>旋转的n菱柱</title>
+    <link rel="stylesheet" href="./widget/createPrism.css">
+    <style>
+        .wrap {
+            margin: 100px auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap" id="wrap">
+        
+    </div>
+    <script src="./widget/createPrism.js"></script>
+    <script>
+        var cube = new prism({
+            id: 'wrap',
+            count: 6,
+            width: '100px',
+            height: '250px',
+            perspective: '1000px'
+        })
+        cube.init();
+    </script>
+</body>
+</html>
